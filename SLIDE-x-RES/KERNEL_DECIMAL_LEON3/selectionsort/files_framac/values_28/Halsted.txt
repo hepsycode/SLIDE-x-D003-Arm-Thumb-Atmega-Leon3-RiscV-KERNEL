@@ -1,0 +1,77 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/selectionsort/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/selectionsort/includes/values_28' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c' -o '/tmp/frst.c94a95c.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/selectionsort/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 158 
+  Distinct operators: 27 
+  Total_operands: 59 
+  Distinct operands: 24 
+  Program length: 217 
+  Vocabulary size: 51 
+  Program volume: 1230.92 
+  Effort: 40851.03 
+  Program level: 0.03 
+  Difficulty level: 33.19 
+  Time to implement: 2269.50 
+  Bugs delivered: 0.40 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 1
+    if: 1
+    for: 2
+    ): 5
+    ,: 11
+    {: 1
+    (: 5
+    }: 1
+    []: 6
+    ;: 13
+    +: 1
+    ++: 2
+    -: 5
+    <: 3
+    =: 7
+    TARGET_TYPE: 1
+    double : 2
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 1
+    unsigned: 14
+    char: 6
+    enum  { size = 9 }: 1
+    uint8_t: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    a: 7
+    selectionsort: 1
+    temp: 3
+    min_idx: 6
+    pop: 2
+    j: 6
+    size: 3
+    push: 2
+    i: 8
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    71836399136610961: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    2618091873330020665: 1
+    1921381067299972255: 1
+    9198177602686866490: 1
+    7205825291744466649: 1
+    1: 2
+    4765086499653478064: 1
+    3252939338033256829: 1
+    5016155272806405568: 1
+    9: 1
+    0: 3
+    2859050863856008493: 1

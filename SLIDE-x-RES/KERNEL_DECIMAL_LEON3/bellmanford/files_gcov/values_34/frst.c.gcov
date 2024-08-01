@@ -1,0 +1,120 @@
+        -:    0:Source:/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-BENCH/KERNEL/bellmanford/frst.c
+        -:    0:Graph:frst.gcno
+        -:    0:Data:frst.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdint.h>
+        -:    2:#include <values.h>
+        -:    3:
+        -:    4:typedef double TARGET_TYPE;
+        -:    5:typedef uint8_t TARGET_INDEX;
+        -:    6:
+        -:    7:TARGET_TYPE dist[size];
+        -:    8:TARGET_INDEX i, j = 0;
+        -:    9:
+function bellmanford called 1 returned 100% blocks executed 94%
+        1:   10:void bellmanford()
+        -:   11:{
+        1:   12:	TARGET_INDEX up = 0;
+        -:   13:
+        -:   14:	// Calculates the maximum value for the current datatype
+        1:   15:	up = 1;
+       64:   16:	for(i = 0; i < (8*sizeof(TARGET_TYPE)) - 1; i++)
+unconditional  0 taken 1
+branch  1 taken 63
+branch  2 taken 1 (fallthrough)
+       63:   17:		up *= 2;
+unconditional  0 taken 63
+        1:   18:	up -= 1;
+        -:   19:
+        -:   20:	// Initializes the dist array 
+       29:   21:	for(i = 0; i < size; i++)
+unconditional  0 taken 1
+branch  1 taken 28
+branch  2 taken 1 (fallthrough)
+       28:   22:		dist[i] = up;
+unconditional  0 taken 28
+        -:   23:
+        -:   24:	
+        -:   25:	// Sets the source equal to zero
+        1:   26:	dist[0] = 0;
+        -:   27:	
+       29:   28:	for(i = 0; i < size; i++)
+unconditional  0 taken 1
+unconditional  1 taken 28
+branch  2 taken 28
+branch  3 taken 1 (fallthrough)
+        -:   29:	{
+      812:   30:		for(j = 0; j < size; j++)
+unconditional  0 taken 28
+unconditional  1 taken 784
+branch  2 taken 784
+branch  3 taken 28 (fallthrough)
+        -:   31:		{
+      784:   32:			if(dist[j] + a[i][j] < dist[i] && a[i][j] != -1)
+branch  0 taken 392 (fallthrough)
+branch  1 taken 392
+branch  2 taken 0 (fallthrough)
+branch  3 taken 392
+    #####:   33:				dist[i] = dist[j] + a[i][j]; 
+unconditional  0 never executed
+        -:   34:		}
+        -:   35:	}
+        -:   36:	
+        -:   37:	
+        1:   38:}
+        -:   39:
+function make_oriented called 1 returned 100% blocks executed 100%
+        1:   40:void make_oriented()
+        -:   41:{
+       29:   42:	for(i = 0; i < size; i++)
+unconditional  0 taken 1
+unconditional  1 taken 28
+branch  2 taken 28
+branch  3 taken 1 (fallthrough)
+        -:   43:	{
+       28:   44:		a[i][i] = -1;
+        -:   45:
+        -:   46:		// Makes the last node the goal node 
+       28:   47:		a[size-1][i] = -1;
+        -:   48:
+      812:   49:		for(j = 0; j < size; j++)
+unconditional  0 taken 28
+unconditional  1 taken 784
+branch  2 taken 784
+branch  3 taken 28 (fallthrough)
+        -:   50:		{
+      784:   51:			if(a[i][j] < 0 && i != j && a[i][j] != -1)
+branch  0 taken 514 (fallthrough)
+branch  1 taken 270
+branch  2 taken 486 (fallthrough)
+branch  3 taken 28
+branch  4 taken 286 (fallthrough)
+branch  5 taken 200
+        -:   52:			{
+      286:   53:				a[i][j] *= -1;
+      286:   54:				a[j][i] = -1;
+unconditional  0 taken 286
+        -:   55:			}
+        -:   56:			else
+        -:   57:			{
+        -:   58:
+      498:   59:				if(a[j][i] >= 0)
+branch  0 taken 276 (fallthrough)
+branch  1 taken 222
+      276:   60:					a[i][j] = -1;
+unconditional  0 taken 276
+        -:   61:			}
+        -:   62:		}
+        -:   63:	}
+        -:   64:
+        1:   65:}
+        -:   66:
+function main called 1 returned 100% blocks executed 100%
+        1:   67:void main()
+        -:   68:{
+        -:   69:
+        1:   70:	make_oriented();
+call    0 returned 1
+        1:   71:	bellmanford();
+call    0 returned 1
+        1:   72:}

@@ -1,0 +1,158 @@
+
+;; Function create_needs (create_needs, funcdef_no=0, decl_uid=2046, cgraph_uid=1, symbol_order=7)
+
+void create_needs ()
+{
+  int _1;
+  int _2;
+  double _3;
+  double _4;
+  double _5;
+  unsigned char _6;
+  unsigned char j.8_7;
+  unsigned char _8;
+  unsigned char i.11_9;
+
+  <bb 2> [local count: 14598063]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:19:8] i = 0;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:19:2] goto <bb 7>; [100.00%]
+
+  <bb 3> [local count: 118111600]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:21:9] j = 0;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:21:3] goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 955630225]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:22:23] _1 = (int) i.11_9;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:22:23] _2 = (int) j.8_7;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:22:23] _3 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:22:23] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:22:20] max[_1][_2];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:22:41] _4 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:22:41] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:22:38] allocated[_1][_2];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:22:27] _5 = _3 - _4;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:22:15] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:22:11] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:22:8] need[_1][_2] = _5;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:21:25] _6 = j.8_7 + 1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:21:25] j = _6;
+
+  <bb 5> [local count: 1073741824]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:21:16] j.8_7 = j;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:21:16] if (j.8_7 <= 5)
+    goto <bb 4>; [89.00%]
+  else
+    goto <bb 6>; [11.00%]
+
+  <bb 6> [local count: 118111600]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:19:24] _8 = i.11_9 + 1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:19:24] i = _8;
+
+  <bb 7> [local count: 132709663]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:19:15] i.11_9 = i;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:19:15] if (i.11_9 <= 5)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 8>; [11.00%]
+
+  <bb 8> [local count: 14598063]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:25:1] return;
+
+}
+
+
+
+;; Function banker_algorithm (banker_algorithm, funcdef_no=1, decl_uid=2056, cgraph_uid=2, symbol_order=8)
+
+Removing basic block 12
+Removing basic block 13
+Removing basic block 14
+TARGET_TYPE banker_algorithm ()
+{
+  int _1;
+  double _2;
+  int _3;
+  double _4;
+  double _5;
+  double _6;
+  double _7;
+  double _8;
+  double found.29_9;
+  unsigned char _10;
+  unsigned char j.32_11;
+  unsigned char _12;
+  unsigned char i.35_13;
+  TARGET_TYPE _14;
+
+  <bb 2> [local count: 62492909]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:29:8] i = 0;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:29:2] goto <bb 10>; [100.00%]
+
+  <bb 3> [local count: 114863530]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:31:9] j = 0;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:31:3] goto <bb 8>; [100.00%]
+
+  <bb 4> [local count: 1014686024]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:33:17] _1 = (int) j.32_11;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:33:17] _2 = available[_1];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:33:27] _3 = (int) i.35_13;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:33:27] _4 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:33:27] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:33:24] need[_3][_1];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:33:17] _5 = _2 - _4;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:33:17] available[_1] = _5;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:34:20] _6 = allocated[_3][_1];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:34:20] _7 = _4 + _6;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:34:20] allocated[_3][_1] = _7;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:36:10] found = 0.0;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:38:6] if (_4 <= _5)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 6>; [50.00%]
+
+  <bb 5> [local count: 507343012]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:41:19] _8 = _5 + _7;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:41:19] available[_1] = _8;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:42:11] found = 1.0e+0;
+
+  <bb 6> [local count: 1014686024]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:45:13] found.29_9 = found;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:45:6] if (found.29_9 == 0.0)
+    goto <bb 11>; [5.50%]
+  else
+    goto <bb 7>; [94.50%]
+
+  <bb 7> [local count: 958878294]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:31:25] _10 = j.32_11 + 1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:31:25] j = _10;
+
+  <bb 8> [local count: 1073741824]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:31:16] j.32_11 = j;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:31:16] if (j.32_11 <= 5)
+    goto <bb 4>; [94.50%]
+  else
+    goto <bb 9>; [5.50%]
+
+  <bb 9> [local count: 59055800]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:29:24] _12 = i.35_13 + 1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:29:24] i = _12;
+
+  <bb 10> [local count: 121548709]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:29:15] i.35_13 = i;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:29:15] if (i.35_13 <= 5)
+    goto <bb 3>; [94.50%]
+  else
+    goto <bb 11>; [5.50%]
+
+  <bb 11> [local count: 62492910]:
+  # _14 = PHI <[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:46:12] -1.0e+0(6), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:51:9] 1.0e+0(10)>
+  return _14;
+
+}
+
+
+
+;; Function main (main, funcdef_no=2, decl_uid=2066, cgraph_uid=3, symbol_order=9) (executed once)
+
+void main ()
+{
+  <bb 2> [local count: 1073741824]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:58:2] create_needs ();
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:59:2] banker_algorithm ();
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c:60:1] return;
+
+}
+
+

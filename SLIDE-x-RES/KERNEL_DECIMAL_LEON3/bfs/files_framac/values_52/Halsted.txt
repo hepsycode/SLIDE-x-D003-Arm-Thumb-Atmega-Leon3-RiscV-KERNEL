@@ -1,0 +1,96 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/bfs/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/bfs/includes/values_52' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/bfs/frst.c' -o '/tmp/frst.c6da268.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/bfs/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 239 
+  Distinct operators: 33 
+  Total_operands: 105 
+  Distinct operands: 37 
+  Program length: 344 
+  Vocabulary size: 70 
+  Program volume: 2108.47 
+  Effort: 98727.84 
+  Program level: 0.02 
+  Difficulty level: 46.82 
+  Time to implement: 5484.88 
+  Bugs delivered: 0.71 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 3
+    for: 2
+    if: 3
+    while: 1
+    return: 1
+    ): 12
+    ,: 24
+    {: 6
+    (: 12
+    }: 6
+    []: 13
+    ;: 25
+    &&: 1
+    +: 2
+    ++: 2
+    -: 10
+    !=: 4
+    %: 2
+    <: 2
+    =: 12
+    >: 1
+    TARGET_TYPE: 2
+    double : 2
+    enum  { size = 4 }: 1
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 1
+    unsigned: 14
+    char: 6
+    uint8_t: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    a: 6
+    bfs: 1
+    current: 3
+    enqueue: 2
+    tail: 8
+    dequeue: 1
+    par: 1
+    visited: 4
+    head: 8
+    pop: 2
+    element: 3
+    size: 8
+    push: 2
+    i: 16
+    8367697525524672606: 1
+    6036272646471128818: 1
+    5548183102999828460: 1
+    1888831408006935561: 1
+    2: 3
+    10258378038468932: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    2973398523467943184: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    3077179589501816174: 1
+    7709561204796839684: 1
+    7125787676117046116: 1
+    6087472894868043890: 1
+    1388809273233136292: 1
+    228649291124235316: 1
+    1: 4
+    2018091252288199730: 1
+    4: 1
+    1428960814643973898: 1
+    3048426824554880624: 1
+    0: 10
+    795651720783762279: 1

@@ -1,0 +1,71 @@
+TARGET_TYPE modulo (TARGET_TYPE x, TARGET_TYPE y)
+[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:8:1] {
+  TARGET_TYPE D.2056;
+  TARGET_TYPE result;
+
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:9:17] result = x;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:11:11] goto <D.2045>;
+  <D.2046>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:12:16] result = result - y;
+  <D.2045>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:11:19] if (result >= y) goto <D.2046>; else goto <D.2044>;
+  <D.2044>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:14:12] D.2056 = result;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:14:12] return D.2056;
+}
+
+
+TARGET_TYPE gcd ()
+[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:18:1] {
+  TARGET_TYPE D.2062;
+  TARGET_TYPE r;
+
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:20:17] r = 0.0;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:22:10] m.0_1 = m;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:22:7] if (m.0_1 == 0.0) goto <D.2058>; else goto <D.2059>;
+  <D.2058>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:22:20] n.1_2 = n;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:22:15] if (n.1_2 == 0.0) goto <D.2060>; else goto <D.2061>;
+  <D.2060>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:23:16] D.2062 = -1.0e+0;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:23:16] // predicted unlikely by early return (on trees) predictor.
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:23:16] return D.2062;
+  <D.2061>:
+  <D.2059>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:25:10] m.2_3 = m;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:25:7] if (m.2_3 < 0.0) goto <D.2063>; else goto <D.2064>;
+  <D.2063>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:26:13] m.3_4 = m;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:26:13] _5 = -m.3_4;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:26:11] m = _5;
+  <D.2064>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:27:10] n.4_6 = n;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:27:7] if (n.4_6 < 0.0) goto <D.2065>; else goto <D.2066>;
+  <D.2065>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:28:13] n.5_7 = n;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:28:13] _8 = -n.5_7;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:28:11] n = _8;
+  <D.2066>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:31:10] goto <D.2051>;
+  <D.2052>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:33:13] n.6_9 = n;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:33:13] m.7_10 = m;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:33:13] r = modulo (m.7_10, n.6_9);
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:34:11] n.8_11 = n;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:34:11] m = n.8_11;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:35:11] n = r;
+  <D.2051>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:31:11] n.9_12 = n;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:31:11] if (n.9_12 != 0.0) goto <D.2052>; else goto <D.2050>;
+  <D.2050>:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:38:12] D.2062 = m;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:38:12] return D.2062;
+}
+
+
+void main ()
+[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:43:1] {
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:44:5] gcd ();
+}
+
+

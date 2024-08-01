@@ -1,0 +1,81 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/floydwarshall/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/floydwarshall/includes/values_75' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/floydwarshall/frst.c' -o '/tmp/frst.cc66ebd.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/floydwarshall/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 179 
+  Distinct operators: 26 
+  Total_operands: 67 
+  Distinct operands: 29 
+  Program length: 246 
+  Vocabulary size: 55 
+  Program volume: 1422.21 
+  Effort: 42715.48 
+  Program level: 0.03 
+  Difficulty level: 30.03 
+  Time to implement: 2373.08 
+  Bugs delivered: 0.41 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 2
+    if: 1
+    for: 3
+    ): 4
+    ,: 20
+    {: 3
+    (: 4
+    }: 3
+    []: 12
+    ;: 11
+    +: 2
+    ++: 3
+    -: 8
+    <: 4
+    =: 4
+    double : 2
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 3
+    unsigned: 14
+    char: 6
+    enum  { size = 4 }: 1
+    uint8_t: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    h: 8
+    a: 7
+    floydwarshall: 1
+    pop: 2
+    j: 8
+    size: 5
+    push: 2
+    i: 8
+    403871536502756391: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    8347030377666041113: 1
+    8938038032055469249: 1
+    792183783560644746: 1
+    6139073583648602615: 1
+    2465490220339749134: 1
+    234044867790426723: 1
+    1586698677675357416: 1
+    4411150041117040781: 1
+    359077805591328544: 1
+    1894849736784263062: 1
+    7761103995194184005: 1
+    956738516342884755: 1
+    6787973944487970461: 1
+    4: 1
+    1497957327631419259: 1
+    0: 3
+    6004548845320641665: 1

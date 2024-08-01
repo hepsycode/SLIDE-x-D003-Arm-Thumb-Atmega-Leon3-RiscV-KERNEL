@@ -1,0 +1,235 @@
+
+;; Function merge (merge, funcdef_no=0, decl_uid=2043, cgraph_uid=1, symbol_order=1)
+
+Released 20 names, 29.85%, removed 20 holes
+void merge (TARGET_INDEX left, TARGET_INDEX right, TARGET_INDEX middle)
+{
+  TARGET_TYPE y[16];
+  TARGET_TYPE x[16];
+  TARGET_INDEX i2;
+  TARGET_INDEX i1;
+  TARGET_INDEX k;
+  TARGET_INDEX j;
+  TARGET_INDEX i;
+  unsigned char _1;
+  int _2;
+  int _3;
+  int _4;
+  double _5;
+  int _6;
+  int _7;
+  int _8;
+  int _9;
+  double _10;
+  int _11;
+  double _12;
+  int _13;
+  double _14;
+  int _15;
+  int _16;
+  _Bool _17;
+  _Bool _18;
+  _Bool _19;
+  int _20;
+  int _21;
+  double _22;
+  int _23;
+  int _24;
+  double _25;
+
+  <bb 2> [local count: 118111600]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:11:27] _1 = middle_43(D) - left_44(D);
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:11:15] i1_45 = _1 + 1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:12:15] i2_47 = right_46(D) - middle_43(D);
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:15:23] y = {};
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:18:2] goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 955630225]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:19:17] _2 = (int) left_44(D);
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:19:17] _3 = (int) i_26;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:19:17] _4 = _2 + _3;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:19:11] _5 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:19:11] a[_4];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:19:8] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:19:4] x[_3] = _5;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:18:22] i_66 = i_26 + 1;
+
+  <bb 4> [local count: 1073741824]:
+  # i_26 = PHI <[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:18:8] 0(2), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:18:22] i_66(3)>
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:18:15] if (i_26 < i1_45)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 20>; [11.00%]
+
+  <bb 20> [local count: 118111600]:
+  goto <bb 6>; [100.00%]
+
+  <bb 5> [local count: 955630225]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:22:19] _6 = (int) middle_43(D);
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:22:19] _7 = _6 + 1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:22:23] _8 = (int) i_27;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:22:23] _9 = _7 + _8;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:22:11] _10 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:22:11] a[_9];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:22:8] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:22:4] y[_8] = _10;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:21:22] i_64 = i_27 + 1;
+
+  <bb 6> [local count: 1073741824]:
+  # i_27 = PHI <[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:21:8] 0(20), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:21:22] i_64(5)>
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:21:15] if (i_27 < i2_47)
+    goto <bb 5>; [89.00%]
+  else
+    goto <bb 19>; [11.00%]
+
+  <bb 19> [local count: 118111600]:
+  goto <bb 11>; [100.00%]
+
+  <bb 7> [local count: 955630225]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:29:7] _11 = (int) i_29;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:29:7] _12 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:29:7] x[_11];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:29:15] _13 = (int) j_32;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:29:15] _14 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:29:15] y[_13];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:29:5] if (_12 <= _14)
+    goto <bb 8>; [50.00%]
+  else
+    goto <bb 9>; [50.00%]
+
+  <bb 8> [local count: 477815112]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:30:14] i_60 = i_29 + 1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:30:5] _15 = (int) k_34;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:30:9] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:30:5] a[_15] = _12;
+  [0:0] goto <bb 10>; [100.00%]
+
+  <bb 9> [local count: 477815112]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:32:14] j_58 = j_32 + 1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:32:5] _16 = (int) k_34;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:32:9] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:32:5] a[_16] = _14;
+
+  <bb 10> [local count: 955630225]:
+  # i_28 = PHI <[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:30:14] i_60(8), i_29(9)>
+  # j_31 = PHI <j_32(8), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:32:14] j_58(9)>
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:34:5] k_62 = k_34 + 1;
+
+  <bb 11> [local count: 1073741824]:
+  # i_29 = PHI <[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:24:4] 0(19), i_28(10)>
+  # j_32 = PHI <[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:25:4] 0(19), j_31(10)>
+  # k_34 = PHI <[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:26:4] left_44(D)(19), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:34:5] k_62(10)>
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:27:10] _17 = i_29 < i1_45;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:27:20] _18 = j_32 < i2_47;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:27:15] _19 = _17 & _18;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:27:15] if (_19 != 0)
+    goto <bb 7>; [89.00%]
+  else
+    goto <bb 18>; [11.00%]
+
+  <bb 18> [local count: 118111600]:
+  goto <bb 13>; [100.00%]
+
+  <bb 12> [local count: 955630225]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:39:11] _20 = (int) i_30;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:39:4] _21 = (int) k_35;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:39:11] _22 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:39:11] x[_20];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:39:8] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:39:4] a[_21] = _22;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:40:4] i_56 = i_30 + 1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:41:4] k_57 = k_35 + 1;
+
+  <bb 13> [local count: 1073741824]:
+  # i_30 = PHI <i_29(18), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:40:4] i_56(12)>
+  # k_35 = PHI <k_34(18), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:41:4] k_57(12)>
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:37:10] if (i_30 < i1_45)
+    goto <bb 12>; [89.00%]
+  else
+    goto <bb 17>; [11.00%]
+
+  <bb 17> [local count: 118111600]:
+  goto <bb 15>; [100.00%]
+
+  <bb 14> [local count: 955630225]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:46:11] _23 = (int) j_33;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:46:4] _24 = (int) k_36;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:46:11] _25 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:46:11] y[_23];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:46:8] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:46:4] a[_24] = _25;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:47:4] j_53 = j_33 + 1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:48:4] k_54 = k_36 + 1;
+
+  <bb 15> [local count: 1073741824]:
+  # j_33 = PHI <j_32(17), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:47:4] j_53(14)>
+  # k_36 = PHI <k_35(17), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:48:4] k_54(14)>
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:44:10] if (j_33 < i2_47)
+    goto <bb 14>; [89.00%]
+  else
+    goto <bb 16>; [11.00%]
+
+  <bb 16> [local count: 118111600]:
+  x ={v} {CLOBBER};
+  y ={v} {CLOBBER};
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:50:1] return;
+
+}
+
+
+
+;; Function mergesort_0 (mergesort_0, funcdef_no=1, decl_uid=2071, cgraph_uid=2, symbol_order=2)
+
+Released 5 names, 29.41%, removed 5 holes
+void mergesort_0 (TARGET_INDEX left, TARGET_INDEX right)
+{
+  TARGET_INDEX middle;
+  int _1;
+  int _2;
+  int _3;
+  int _4;
+  unsigned char _5;
+  int _6;
+  unsigned char _7;
+  int _8;
+
+  <bb 2> [local count: 1073741824]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:54:4] if (left_10(D) < right_11(D))
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 4>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:56:36] _1 = (int) right_11(D);
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:56:36] _2 = (int) left_10(D);
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:56:36] _3 = _1 - _2;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:56:42] _4 = _3 / 2;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:56:29] _5 = (unsigned char) _4;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:56:16] middle_13 = _5 + left_10(D);
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:58:3] _6 = (int) middle_13;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:58:3] mergesort_0 (_2, _6);
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:59:21] _7 = middle_13 + 1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:59:3] _8 = (int) _7;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:59:3] mergesort_0 (_8, _1);
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:61:3] merge (_2, _1, _6);
+
+  <bb 4> [local count: 1073741824]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:63:1] return;
+
+}
+
+
+
+;; Function mergesort (mergesort, funcdef_no=2, decl_uid=2074, cgraph_uid=3, symbol_order=3)
+
+Released 0 names, 0.00%, removed 0 holes
+void mergesort ()
+{
+  <bb 2> [local count: 1073741824]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:67:2] mergesort_0 (0, 15);
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:68:1] return;
+
+}
+
+
+
+;; Function main (main, funcdef_no=3, decl_uid=2076, cgraph_uid=4, symbol_order=4) (executed once)
+
+Released 0 names, 0.00%, removed 0 holes
+void main ()
+{
+  <bb 2> [local count: 1073741824]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:72:2] mergesort ();
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c:73:1] return;
+
+}
+
+

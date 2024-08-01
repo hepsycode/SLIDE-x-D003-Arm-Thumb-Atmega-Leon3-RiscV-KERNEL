@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+  12176	   7344	    616	  20136	   4ea8	/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/bellmanford//files/values_97/frst

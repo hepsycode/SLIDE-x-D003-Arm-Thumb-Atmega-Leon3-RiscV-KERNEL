@@ -1,0 +1,111 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/banker_algorithm/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/banker_algorithm/includes/values_92' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c' -o '/tmp/frst.cbd899e.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 240 
+  Distinct operators: 31 
+  Total_operands: 124 
+  Distinct operands: 54 
+  Program length: 364 
+  Vocabulary size: 85 
+  Program volume: 2333.02 
+  Effort: 83038.17 
+  Program level: 0.03 
+  Difficulty level: 35.59 
+  Time to implement: 4613.23 
+  Bugs delivered: 0.63 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 7
+    if: 2
+    for: 4
+    return: 2
+    ): 6
+    ,: 44
+    {: 4
+    (: 6
+    }: 4
+    []: 19
+    ;: 22
+    -: 2
+    ++: 4
+    +=: 2
+    ==: 1
+    <: 4
+    =: 7
+    <=: 1
+    -=: 1
+    TARGET_TYPE: 2
+    double : 4
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 2
+    unsigned: 14
+    char: 6
+    enum  { size = 4 }: 1
+    uint8_t: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    create_needs: 1
+    banker_algorithm: 1
+    found: 4
+    available: 4
+    max: 2
+    need: 5
+    allocated: 4
+    pop: 2
+    j: 18
+    size: 11
+    push: 2
+    i: 15
+    2845618435442793007: 1
+    2717677380425155874: 1
+    4961737310117208898: 1
+    1380498355696191988: 1
+    3839644530436072039: 1
+    3193709028344214078: 1
+    8847846150857389887: 1
+    5929669288882059255: 1
+    8459698298062855243: 1
+    1: 3
+    146896116148611417: 1
+    4: 1
+    7146915531746548930: 1
+    9198324113960020446: 1
+    7470127521620302477: 1
+    7242793645210412754: 1
+    9207648881050254363: 1
+    8026371710899055595: 1
+    3756270229163213561: 1
+    789084804219779368: 1
+    369671300967461666: 1
+    5068765949972724083: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    4746592372297245225: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    2167593997433257306: 1
+    1178543847152992104: 1
+    3779673201226014394: 1
+    7939731611880449725: 1
+    4287232409943365903: 1
+    394324117831926315: 1
+    294682261096341375: 1
+    1044136664665358432: 1
+    3871831938676371599: 1
+    2809723266374911785: 1
+    8657125351889385488: 1
+    8738607881171825059: 1
+    8352029891686057358: 1
+    3859475928232222619: 1
+    0: 9
+    7725545416965787066: 1

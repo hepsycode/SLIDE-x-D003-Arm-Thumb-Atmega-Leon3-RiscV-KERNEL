@@ -1,0 +1,98 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/mergesort/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/mergesort/includes/values_32' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/mergesort/frst.c' -o '/tmp/frst.cfbac59.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/mergesort/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 251 
+  Distinct operators: 32 
+  Total_operands: 129 
+  Distinct operands: 40 
+  Program length: 380 
+  Vocabulary size: 72 
+  Program volume: 2344.57 
+  Effort: 120979.89 
+  Program level: 0.02 
+  Difficulty level: 51.60 
+  Time to implement: 6721.10 
+  Bugs delivered: 0.82 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 3
+    if: 2
+    for: 2
+    while: 3
+    ): 11
+    ,: 20
+    {: 4
+    (: 11
+    }: 4
+    []: 14
+    ;: 31
+    &&: 1
+    +: 6
+    ++: 8
+    -: 13
+    +=: 1
+    <: 7
+    =: 11
+    /: 1
+    <=: 1
+    TARGET_TYPE: 1
+    double : 2
+    short: 4
+    enum  { size = 16 }: 1
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 4
+    unsigned: 14
+    char: 6
+    uint8_t: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    a: 7
+    k: 9
+    mergesort_0: 3
+    mergesort: 1
+    y: 5
+    right: 5
+    merge: 1
+    i2: 4
+    left: 8
+    x: 5
+    pop: 2
+    j: 8
+    size: 4
+    push: 2
+    middle: 7
+    i1: 4
+    i: 18
+    8364941585174565336: 1
+    5495556233569655762: 1
+    2: 1
+    7265152547430439961: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    5506313044457747193: 1
+    5482221428129487835: 1
+    8522560037341839049: 1
+    5973537046915185225: 1
+    1: 5
+    2627886126202641444: 1
+    30354682975661968: 1
+    16: 1
+    425291742979456427: 1
+    8063678813015543084: 1
+    6738630880230719605: 1
+    0: 7
+    3985763906161608481: 1
+    4970576718661973813: 1
+    3510365154153637904: 1
+    3442781747535981925: 1

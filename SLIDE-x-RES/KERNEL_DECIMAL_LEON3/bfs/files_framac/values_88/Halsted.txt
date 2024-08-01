@@ -1,0 +1,83 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/bfs/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/bfs/includes/values_88' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/bfs/frst.c' -o '/tmp/frst.c648aa2.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/bfs/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 223 
+  Distinct operators: 33 
+  Total_operands: 93 
+  Distinct operands: 24 
+  Program length: 316 
+  Vocabulary size: 57 
+  Program volume: 1843.19 
+  Effort: 117849.17 
+  Program level: 0.02 
+  Difficulty level: 63.94 
+  Time to implement: 6547.18 
+  Bugs delivered: 0.80 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 3
+    for: 2
+    if: 3
+    while: 1
+    return: 1
+    ): 12
+    ,: 10
+    {: 6
+    (: 12
+    }: 6
+    []: 13
+    ;: 25
+    &&: 1
+    +: 2
+    ++: 2
+    -: 8
+    !=: 4
+    %: 2
+    <: 2
+    =: 12
+    >: 1
+    TARGET_TYPE: 2
+    double : 2
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 1
+    enum  { size = 2 }: 1
+    unsigned: 14
+    char: 6
+    uint8_t: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    a: 6
+    bfs: 1
+    current: 3
+    enqueue: 2
+    tail: 8
+    dequeue: 1
+    par: 1
+    visited: 4
+    head: 8
+    pop: 2
+    element: 3
+    size: 8
+    push: 2
+    i: 16
+    2: 4
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    2217619759280678215: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    7529196459240064106: 1
+    2360498771429672879: 1
+    1: 4
+    3312620945202364603: 1
+    0: 10

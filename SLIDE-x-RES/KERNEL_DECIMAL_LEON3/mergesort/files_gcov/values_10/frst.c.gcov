@@ -1,0 +1,115 @@
+        -:    0:Source:/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-BENCH/KERNEL/mergesort/frst.c
+        -:    0:Graph:frst.gcno
+        -:    0:Data:frst.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdint.h>
+        -:    2:#include <values.h>
+        -:    3:
+        -:    4:typedef uint8_t TARGET_INDEX;
+        -:    5:typedef double TARGET_TYPE;
+        -:    6:
+function merge called 13 returned 100% blocks executed 100%
+       13:    7:void merge(TARGET_INDEX left, TARGET_INDEX right, TARGET_INDEX middle)
+        -:    8:{
+        -:    9:	// Indexes
+       13:   10:	TARGET_INDEX i, j, k = 0;
+       13:   11:	TARGET_INDEX i1 = middle - left + 1;
+       13:   12:	TARGET_INDEX i2 = right - middle;
+        -:   13:
+        -:   14:	// Temporary Arrays
+       13:   15:	TARGET_TYPE x[size], y[size] = {0};
+        -:   16:
+        -:   17:	// Copy elements in the temporary arrays x, y
+       42:   18:	for(i = 0; i < i1; i++)
+unconditional  0 taken 13
+branch  1 taken 29
+branch  2 taken 13 (fallthrough)
+       29:   19:		x[i] = a[left + i];
+unconditional  0 taken 29
+        -:   20:
+       38:   21:	for(i = 0; i < i2; i++)
+unconditional  0 taken 13
+branch  1 taken 25
+branch  2 taken 13 (fallthrough)
+       25:   22:		y[i] = a[middle + 1 + i];
+unconditional  0 taken 25
+        -:   23:	
+       13:   24:	i = 0;
+       13:   25:	j = 0;
+       13:   26:	k = left;
+       51:   27:	while(i < i1 && j < i2)
+unconditional  0 taken 13
+branch  1 taken 44 (fallthrough)
+branch  2 taken 7
+branch  3 taken 38
+branch  4 taken 6 (fallthrough)
+        -:   28:	{		
+       38:   29:		if(x[i] <= y[j])
+branch  0 taken 20 (fallthrough)
+branch  1 taken 18
+       20:   30:			a[k] = x[i++];
+unconditional  0 taken 20
+        -:   31:		else
+       18:   32:			a[k] = y[j++];
+unconditional  0 taken 18
+        -:   33:
+       38:   34:		k += 1;
+unconditional  0 taken 38
+        -:   35:	}
+        -:   36:	
+       22:   37:	while(i < i1)
+unconditional  0 taken 13
+branch  1 taken 9
+branch  2 taken 13 (fallthrough)
+        -:   38:	{
+        9:   39:		a[k] = x[i];
+        9:   40:		i++;
+        9:   41:		k++;
+unconditional  0 taken 9
+        -:   42:	}
+        -:   43:	
+       20:   44:	while(j < i2)
+unconditional  0 taken 13
+branch  1 taken 7
+branch  2 taken 13 (fallthrough)
+        -:   45:	{
+        7:   46:		a[k] = y[j];
+        7:   47:		j++;
+        7:   48:		k++;
+unconditional  0 taken 7
+        -:   49:	}
+       13:   50:}
+        -:   51:
+function mergesort_0 called 27 returned 100% blocks executed 100%
+       27:   52:void mergesort_0(TARGET_INDEX left, TARGET_INDEX right)
+        -:   53:{
+       27:   54:	if(left < right)
+branch  0 taken 13 (fallthrough)
+branch  1 taken 14
+        -:   55:	{
+       13:   56:		TARGET_INDEX middle = left+(right-left)/2;
+        -:   57:
+       13:   58:		mergesort_0(left, middle);
+call    0 returned 13
+       13:   59:		mergesort_0(middle+1, right);
+call    0 returned 13
+        -:   60:
+       13:   61:		merge(left, right, middle);
+call    0 returned 13
+unconditional  1 taken 13
+        -:   62:	}
+       27:   63:}
+        -:   64:
+function mergesort called 1 returned 100% blocks executed 100%
+        1:   65:void mergesort()
+        -:   66:{
+        1:   67:	mergesort_0(0, size-1);
+call    0 returned 1
+        1:   68:}
+        -:   69:
+function main called 1 returned 100% blocks executed 100%
+        1:   70:void main()
+        -:   71:{
+        1:   72:	mergesort();
+call    0 returned 1
+        1:   73:}

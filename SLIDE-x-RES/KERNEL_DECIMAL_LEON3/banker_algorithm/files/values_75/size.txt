@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+  11920	   8064	   4256	  24240	   5eb0	/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/banker_algorithm//files/values_75/frst

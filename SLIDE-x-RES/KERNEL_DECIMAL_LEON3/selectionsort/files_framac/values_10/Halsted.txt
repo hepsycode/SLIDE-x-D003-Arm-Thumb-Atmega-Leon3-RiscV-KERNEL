@@ -1,0 +1,95 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/selectionsort/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/selectionsort/includes/values_10' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c' -o '/tmp/frst.c08925b.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/selectionsort/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 185 
+  Distinct operators: 27 
+  Total_operands: 77 
+  Distinct operands: 42 
+  Program length: 262 
+  Vocabulary size: 69 
+  Program volume: 1600.43 
+  Effort: 39610.73 
+  Program level: 0.04 
+  Difficulty level: 24.75 
+  Time to implement: 2200.60 
+  Bugs delivered: 0.39 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 1
+    if: 1
+    for: 2
+    ): 5
+    ,: 29
+    {: 1
+    (: 5
+    }: 1
+    []: 6
+    ;: 13
+    +: 1
+    ++: 2
+    -: 14
+    <: 3
+    =: 7
+    TARGET_TYPE: 1
+    double : 2
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 1
+    unsigned: 14
+    char: 6
+    uint8_t: 1
+    enum  { size = 27 }: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    a: 7
+    selectionsort: 1
+    temp: 3
+    min_idx: 6
+    pop: 2
+    j: 6
+    size: 3
+    push: 2
+    i: 8
+    3956651029361030246: 1
+    8792282364609040918: 1
+    8346837159753582666: 1
+    583442888085660965: 1
+    3753693287612965675: 1
+    1585714825823461676: 1
+    3357273302999077824: 1
+    9207882061643629851: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    1109702074382085470: 1
+    8042883000879507877: 1
+    2124055962250169471: 1
+    1379464037127502864: 1
+    8916234699880349497: 1
+    2595815461173421987: 1
+    4612278886109330963: 1
+    27: 1
+    2149055694048280916: 1
+    1: 2
+    4600781379787145497: 1
+    7311692749095830986: 1
+    5295354370429616790: 1
+    5529923916527014381: 1
+    327405049897536601: 1
+    0: 3
+    1058661965431882821: 1
+    3361991124729400823: 1
+    2579988026069355748: 1
+    3332112304815082728: 1
+    7329966859970224648: 1
+    3549291034064144710: 1

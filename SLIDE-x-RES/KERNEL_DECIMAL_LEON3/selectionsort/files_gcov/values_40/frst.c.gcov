@@ -1,0 +1,48 @@
+        -:    0:Source:/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-BENCH/KERNEL/selectionsort/frst.c
+        -:    0:Graph:frst.gcno
+        -:    0:Data:frst.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdint.h>
+        -:    2:#include <values.h>
+        -:    3:
+        -:    4:typedef double TARGET_TYPE;
+        -:    5:typedef uint8_t TARGET_INDEX;
+        -:    6:
+function selectionsort called 1 returned 100% blocks executed 100%
+        1:    7:void selectionsort()
+        -:    8:{
+        1:    9:  TARGET_INDEX i, j, min_idx = 0;
+        1:   10:  TARGET_TYPE temp = 0;
+        -:   11:
+       14:   12:  for(i = 0; i < size-1; i++)
+unconditional  0 taken 1
+branch  1 taken 13
+branch  2 taken 1 (fallthrough)
+        -:   13:  {
+        -:   14:
+       13:   15:    min_idx = i;
+      104:   16:    for(j = i+1; j < size; j++)
+unconditional  0 taken 13
+unconditional  1 taken 91
+branch  2 taken 91
+branch  3 taken 13 (fallthrough)
+       91:   17:      if(a[j] < a[min_idx])
+branch  0 taken 21 (fallthrough)
+branch  1 taken 70
+       21:   18:        min_idx = j;
+unconditional  0 taken 21
+        -:   19:    
+        -:   20:      // Swap elements     
+       13:   21:      temp = a[min_idx];
+       13:   22:      a[min_idx] = a[i];
+       13:   23:      a[i] = temp;
+unconditional  0 taken 13
+        -:   24:    }
+        1:   25:}
+        -:   26:
+function main called 1 returned 100% blocks executed 100%
+        1:   27:void main()
+        -:   28:{
+        1:   29:  selectionsort();
+call    0 returned 1
+        1:   30:}

@@ -1,0 +1,169 @@
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/kruskal/frst.c (with preprocessing)
+[metrics] Defined functions (10)
+  ======================
+   count_edges (1 call); find (2 calls); find_min (1 call);
+   init_union_find (1 call); is_connected (1 call); kruskal (1 call);
+   main (0 call); make_non_oriented (1 call); make_set (1 call);
+   union_sets (1 call); 
+  
+  Specified-only functions (0)
+  ============================
+   
+  
+  Undefined and unspecified functions (0)
+  =======================================
+   
+  
+  'Extern' global variables (0)
+  =============================
+   
+  
+  Potential entry points (1)
+  ==========================
+   main; 
+  
+  Global metrics
+  ============== 
+  Sloc = 124
+  Decision point = 23
+  Global variables = 10
+  If = 23
+  Loop = 12
+  Goto = 1
+  Assignment = 45
+  Exit point = 10
+  Function = 10
+  Function call = 10
+  Pointer dereferencing = 0
+  Cyclomatic complexity = 33
+[eva] Analyzing a complete application starting at main
+[eva] Computing initial state
+[eva] Initial state computed
+[eva:initial-state] Values of globals at initialization
+  a[0][0] ∈ {4.11852051938e+18}
+   [0][1] ∈ {-1.36662207372e+18}
+   [0][2] ∈ {2.16775558664e+17}
+   [0][3] ∈ {2.79289352156e+17}
+   [0][4] ∈ {-5.51669415044e+17}
+   [0][5] ∈ {7.42669754081e+18}
+   [0][6] ∈ {-5.33273572777e+17}
+   [0][7] ∈ {-2.44168244184e+18}
+   [1][0] ∈ {5.83111211611e+18}
+   [1][1] ∈ {3.00828626887e+18}
+   [1][2] ∈ {-2.52158626306e+18}
+   [1][3] ∈ {-5.87996010111e+18}
+   [1][4] ∈ {7.35421751009e+18}
+   [1][5] ∈ {-7.09692157503e+18}
+   [1][6] ∈ {-2.51220613443e+18}
+   [1][7] ∈ {-6.18949475357e+18}
+   [2][0] ∈ {2.46117921042e+18}
+   [2][1] ∈ {9.35289269459e+17}
+   [2][2] ∈ {7.99479459048e+18}
+   [2][3] ∈ {-6.98877814421e+18}
+   [2][4] ∈ {7.12208580557e+18}
+   [2][5] ∈ {4.11610818095e+18}
+   [2][6] ∈ {-5.24899877202e+18}
+   [2][7] ∈ {-3.94209821535e+18}
+   [3][0] ∈ {-6.2929831793e+18}
+   [3][1] ∈ {-2.61333096973e+18}
+   [3][2] ∈ {-1.73717699433e+18}
+   [3][3] ∈ {8.09899510416e+18}
+   [3][4] ∈ {-4.60724731084e+18}
+   [3][5] ∈ {-9.17430354498e+18}
+   [3][6] ∈ {-4.98157919322e+18}
+   [3][7] ∈ {2.69170647104e+18}
+   [4][0] ∈ {-7.63560184015e+18}
+   [4][1] ∈ {4.30689329754e+18}
+   [4][2] ∈ {1.84953309814e+18}
+   [4][3] ∈ {-2.98150028101e+18}
+   [4][4] ∈ {-7.19391083247e+18}
+   [4][5] ∈ {-8.10451090494e+16}
+   [4][6] ∈ {-2.75573432713e+18}
+   [4][7] ∈ {-1.38639009986e+18}
+   [5][0] ∈ {-4.21970153748e+18}
+   [5][1] ∈ {-4.92438390782e+18}
+   [5][2] ∈ {6.17317497871e+18}
+   [5][3] ∈ {-5.20682786388e+18}
+   [5][4] ∈ {-4.35752630058e+18}
+   [5][5] ∈ {-3.14836984773e+18}
+   [5][6] ∈ {-9.06031602064e+18}
+   [5][7] ∈ {8.50066268378e+18}
+   [6][0] ∈ {4.5650222075e+18}
+   [6][1] ∈ {-4.74097122283e+17}
+   [6][2] ∈ {8.12492964512e+18}
+   [6][3] ∈ {9.0266183821e+17}
+   [6][4] ∈ {-7.76592164063e+18}
+   [6][5] ∈ {-8.02470401058e+18}
+   [6][6] ∈ {7.82530927019e+18}
+   [6][7] ∈ {7.64004303361e+18}
+   [7][0] ∈ {2.58753119971e+18}
+   [7][1] ∈ {-1.333194078e+18}
+   [7][2] ∈ {-7.25635278948e+18}
+   [7][3] ∈ {3.87542201501e+17}
+   [7][4] ∈ {5.19221561381e+18}
+   [7][5] ∈ {-6.82478127763e+18}
+   [7][6] ∈ {-5.11997391394e+18}
+   [7][7] ∈ {-4.15575074629e+18}
+  union_find[0..7] ∈ {0}
+  i ∈ {0}
+  j ∈ {0}
+  k ∈ {0}
+  z ∈ {0}
+  x ∈ {0}
+  y ∈ {0}
+  min ∈ {0}
+  edge_number ∈ {0}
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:97: starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:91: starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:123: 
+  starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:35: starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:31: starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:177: 
+  starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:173: 
+  starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:197: 
+  starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:63: starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:59: starting to merge loop iterations
+[eva:alarm] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:134: Warning: 
+  overflow in conversion from floating-point to integer.
+  assert -1 < union_find[y];
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:136: 
+  starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:203: 
+  starting to merge loop iterations
+[eva] done for function main
+[eva:summary] ====== ANALYSIS SUMMARY ======
+  ----------------------------------------------------------------------------
+  10 functions analyzed (out of 10): 100% coverage.
+  In these functions, 124 statements reached (out of 124): 100% coverage.
+  ----------------------------------------------------------------------------
+  No errors or warnings raised during the analysis.
+  ----------------------------------------------------------------------------
+  1 alarm generated by the analysis:
+       1 illegal conversion from floating-point to integer
+  ----------------------------------------------------------------------------
+  No logical properties have been reached by the analysis.
+  ----------------------------------------------------------------------------
+[metrics] Eva coverage statistics
+  =======================
+  Syntactically reachable functions = 10 (out of 10)
+  Semantically reached functions = 10
+  Coverage estimation = 100.0%
+[metrics] References to non-analyzed functions
+  ------------------------------------
+[metrics] Statements analyzed by Eva
+  --------------------------
+  124 stmts in analyzed functions, 124 stmts analyzed (100.0%)
+  count_edges: 15 stmts out of 15 (100.0%)
+  find: 2 stmts out of 2 (100.0%)
+  find_min: 20 stmts out of 20 (100.0%)
+  init_union_find: 8 stmts out of 8 (100.0%)
+  is_connected: 21 stmts out of 21 (100.0%)
+  kruskal: 22 stmts out of 22 (100.0%)
+  main: 6 stmts out of 6 (100.0%)
+  make_non_oriented: 18 stmts out of 18 (100.0%)
+  make_set: 2 stmts out of 2 (100.0%)
+  union_sets: 10 stmts out of 10 (100.0%)

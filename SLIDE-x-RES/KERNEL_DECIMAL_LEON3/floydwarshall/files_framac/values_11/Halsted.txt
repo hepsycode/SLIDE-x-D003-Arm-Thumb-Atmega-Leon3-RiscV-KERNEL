@@ -1,0 +1,74 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/floydwarshall/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/floydwarshall/includes/values_11' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/floydwarshall/frst.c' -o '/tmp/frst.c74fccf.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/floydwarshall/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 167 
+  Distinct operators: 26 
+  Total_operands: 60 
+  Distinct operands: 22 
+  Program length: 227 
+  Vocabulary size: 48 
+  Program volume: 1267.79 
+  Effort: 44948.79 
+  Program level: 0.03 
+  Difficulty level: 35.45 
+  Time to implement: 2497.16 
+  Bugs delivered: 0.42 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 2
+    if: 1
+    for: 3
+    ): 4
+    ,: 12
+    {: 3
+    (: 4
+    }: 3
+    []: 12
+    ;: 11
+    +: 2
+    ++: 3
+    -: 4
+    <: 4
+    =: 4
+    double : 2
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 3
+    unsigned: 14
+    char: 6
+    uint8_t: 1
+    enum  { size = 3 }: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    h: 8
+    a: 7
+    floydwarshall: 1
+    pop: 2
+    j: 8
+    size: 5
+    push: 2
+    i: 8
+    1285359200000857949: 1
+    6542365336438562241: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    4388142699811199982: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    2461390336526063198: 1
+    7545717113387673327: 1
+    941630631400814691: 1
+    3880576183329833667: 1
+    1496432397795481337: 1
+    4999218356828926319: 1
+    3: 1
+    0: 3

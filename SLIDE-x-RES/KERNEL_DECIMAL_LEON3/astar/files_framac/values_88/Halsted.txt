@@ -1,0 +1,391 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/astar/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/astar/includes/values_88' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/astar/frst.c' -o '/tmp/frst.cf96c86.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/astar/frst.c (with preprocessing)
+[kernel:pp:logic] 
+  logic preprocessing with "gcc -E -C -I.  -m64 '/tmp/ppannot81f440.c' -o '/tmp/cppannot39cb24.c'"
+[metrics] Halstead metrics
+  ================
+  Total operators: 878 
+  Distinct operators: 66 
+  Total_operands: 540 
+  Distinct operands: 288 
+  Program length: 1418 
+  Vocabulary size: 354 
+  Program volume: 12007.06 
+  Effort: 742937.13 
+  Program level: 0.02 
+  Difficulty level: 61.88 
+  Time to implement: 41274.28 
+  Bugs delivered: 2.73 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 48
+    array: 7
+    break: 1
+    if: 7
+    for: 6
+    while: 1
+    return: 3
+    extern: 79
+    ): 16
+    ,: 156
+    {: 10
+    ?: 1
+    (: 16
+    :: 1
+    *: 17
+    }: 10
+    []: 47
+    ;: 50
+    +: 4
+    &&: 4
+    ++: 7
+    -: 108
+    !=: 4
+    ==: 2
+    <: 8
+    =: 20
+    *=: 1
+    /: 2
+    <=: 1
+    >: 3
+    --: 1
+    >=: 1
+    blkcnt_t: 1
+    FILE: 11
+    double : 2
+    ssize_t: 1
+    struct __fc_FILE { unsigned int __fc_FILE_id; unsigned int __fc_FILE_data;
+      }: 1
+    signed: 16
+    TARGET_INDEX: 4
+    void: 7
+    time_t: 3
+    unsigned: 38
+    int8_t: 1
+    off_t: 2
+    enum  { size = 12 }: 1
+    struct __fc_pos_t { unsigned long __fc_stdio_position; }: 1
+    mode_t: 1
+    nlink_t: 1
+    TARGET_TYPE: 5
+    gid_t: 1
+    struct statfs {
+      unsigned int f_type; unsigned int f_bsize; unsigned int f_blocks;
+      unsigned int f_bfree; unsigned int f_bavail; unsigned int f_files;
+      unsigned int f_ffree; unsigned int f_fsid; unsigned int f_namelen;
+      unsigned int f_frsize; unsigned int f_flags; unsigned int f_spare[4]; }: 1
+    __builtin_va_list: 1
+    short: 4
+    blksize_t: 1
+    ino_t: 1
+    struct stat {
+      dev_t st_dev; ino_t st_ino; mode_t st_mode; nlink_t st_nlink; uid_t
+      st_uid; gid_t st_gid; dev_t st_rdev; off_t st_size; time_t st_atime;
+      time_t st_mtime; time_t st_ctime; blksize_t st_blksize; blkcnt_t
+      st_blocks; }: 1
+    struct __fc_FILE: 1
+    dev_t: 2
+    enum  { goal = 44 }: 1
+    long: 20
+    int: 85
+    size_t: 4
+    struct __fc_pos_t: 1
+    uid_t: 1
+    char: 14
+    uint8_t: 1
+    
+  Operands
+  --------
+    astarF: 1
+    __fc_heap_status: 1
+    getchar_unlocked: 1
+    sprintf: 1
+    a: 22
+    min: 3
+    fgets_unlocked: 1
+    feof_unlocked: 1
+    fseeko: 1
+    __fc_stderr: 1
+    remove_min: 1
+    ftell: 1
+    goal: 3
+    pclose: 1
+    fgetpos: 1
+    putchar: 1
+    gets: 1
+    freopen: 1
+    fsetpos: 1
+    vfscanf: 1
+    pop: 24
+    funlockfile: 1
+    ftello: 1
+    absolute: 2
+    asprintf: 1
+    fileno: 1
+    vsprintf: 1
+    push: 24
+    __fc_p_fopen: 1
+    fwrite_unlocked: 1
+    fputs: 1
+    scanf: 1
+    putc_unlocked: 1
+    tmpnam: 1
+    fscanf: 1
+    current: 13
+    ferror_unlocked: 1
+    perror: 1
+    fgetc_unlocked: 1
+    astar: 1
+    fflush_unlocked: 1
+    clearerr: 1
+    __fc_stdin: 1
+    set_estimates: 1
+    putc: 1
+    priority: 4
+    clearerr_unlocked: 1
+    rename: 1
+    __fc_stdout: 1
+    frontier: 6
+    flockfile: 1
+    fwrite: 1
+    vfprintf: 1
+    fdopen: 1
+    popen: 1
+    ferror: 1
+    fread: 1
+    frontier_size: 4
+    fgetc: 1
+    printf: 1
+    tmpfile: 1
+    getc: 1
+    fclose: 1
+    fc_stdlib: 48
+    vscanf: 1
+    n: 3
+    getchar: 1
+    sscanf: 1
+    putchar_unlocked: 1
+    ftrylockfile: 1
+    fputc: 1
+    fgets: 1
+    vprintf: 1
+    __fc_tmpnam: 2
+    heuristic: 1
+    feof: 1
+    tmp1: 1
+    program_invocation_name: 1
+    fputc_unlocked: 1
+    j: 11
+    fileno_unlocked: 1
+    came_from: 3
+    snprintf: 1
+    program_invocation_short_name: 1
+    fread_unlocked: 1
+    fprintf: 1
+    path_cost: 1
+    vsscanf: 1
+    __fc_p_tmpnam: 1
+    __fc_errno: 1
+    getc_unlocked: 1
+    ungetc: 1
+    vsnprintf: 1
+    init_camefrom: 1
+    node: 1
+    fseek: 1
+    puts: 1
+    rewind: 1
+    setvbuf: 1
+    __fc_fopen: 2
+    remove: 1
+    size: 13
+    fmemopen: 1
+    fputs_unlocked: 1
+    getline: 1
+    insert: 2
+    fopen: 1
+    fflush: 1
+    i: 48
+    dprintf: 1
+    setbuf: 1
+    4183603224816709349: 1
+    6668213017984183817: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_string_axiomatic.h": 1
+    2: 2
+    74545809144976207: 1
+    6038322855646660047: 1
+    5301378113237423028: 1
+    7008523761693266831: 1
+    4201966934294120387: 1
+    2048: 1
+    5225554258519773729: 1
+    484360710940469945: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_mode_t.h": 1
+    5037350212031597475: 1
+    3735491310286614605: 1
+    2269456124783876677: 1
+    7568598235409748719: 1
+    389321972056999178: 1
+    1: 11
+    1179119844038283255: 1
+    6852654160644328368: 1
+    9058412180602348754: 1
+    8406797379470697644: 1
+    4: 1
+    609110235429130659: 1
+    5136907842958311188: 1
+    1322480365119104374: 1
+    305501483282921712: 1
+    5037880854711297884: 1
+    2934374122039869277: 1
+    2451377310743193228: 1
+    7494207164977680352: 1
+    197262111269292939: 1
+    7645365425339212779: 1
+    622089400626253880: 1
+    4448287588105627107: 1
+    6564048736367650391: 1
+    4100596870816990548: 1
+    3601070488231053781: 1
+    5668123226644768833: 1
+    7277256177307173043: 1
+    1797212224831340119: 1
+    2008486177571862164: 1
+    7359564059435337194: 1
+    1257342275791710138: 1
+    5633397497225696538: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_blksize_t.h": 1
+    8448596363885229855: 1
+    474161560648467664: 1
+    4122326841328831988: 1
+    2965683731222944081: 1
+    7339873626365457519: 1
+    186840121254103239: 1
+    8583399125481817279: 1
+    3509510395182018750: 1
+    4230758223278533601: 1
+    3091321165242965285: 1
+    2065667698002051522: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_dev_t.h": 1
+    7510712005661960662: 1
+    8223220535426515532: 1
+    4953708028625591246: 1
+    413956108658265451: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_off_t.h": 1
+    4069117404522112036: 1
+    8989201154169416733: 1
+    4617572180307128236: 1
+    6202439894136699888: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    5604206989066883402: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_stat.h": 1
+    2115270965771992689: 1
+    1326020622003211090: 1
+    5059287108548652671: 1
+    12: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_fpos_t.h": 1
+    3209243570320278284: 1
+    3311535083826388854: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_alloc_axiomatic.h": 1
+    1825493787071540501: 1
+    1355176771491257432: 1
+    7955860392655153575: 1
+    1967891621997184619: 1
+    1511194346025680812: 1
+    4108124227875191392: 1
+    6708777047898210366: 1
+    1936852042256015552: 1
+    6915058591639693002: 1
+    7682134500208210854: 1
+    3177693456131814196: 1
+    6619688587948530641: 1
+    6177492080666504358: 1
+    7426281551164901535: 1
+    5386099135065441760: 1
+    5697770200804612610: 1
+    2318699338060586253: 1
+    120932388111709364: 1
+    3428870625465905232: 1
+    5243870936180195046: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_ssize_t.h": 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_file.h": 1
+    4564570219144943472: 1
+    127: 2
+    8616743438880331393: 1
+    2477362476921274433: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_nlink_t.h": 1
+    1456364388073927496: 1
+    44: 1
+    2766440525183572144: 1
+    1920139580514733614: 1
+    5509366800423546321: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_uid_and_gid.h": 1
+    3110102500238065205: 1
+    6405811718564182047: 1
+    8246075151308986636: 1
+    2352306089675463668: 1
+    1381634104810317693: 1
+    399576867850261387: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_ino_t.h": 1
+    8886795776573504688: 1
+    671147593577014939: 1
+    7485664697232043278: 1
+    6032883465697552016: 1
+    93876826530872679: 1
+    266643102293360422: 1
+    1588079602791815052: 1
+    16: 1
+    1690864215066872824: 1
+    7128980872908623484: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_wchar_t.h": 1
+    512040827222883565: 1
+    2493783682757948424: 1
+    756999315301777746: 1
+    6598312026844189453: 1
+    3391007511195431445: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stddef.h": 1
+    5227287271709877838: 1
+    9081597590593925973: 1
+    2464973438870590115: 1
+    1650374876869192726: 1
+    906849706625395195: 1
+    2889276586429182930: 1
+    7715015772886683501: 1
+    4538099559719290583: 1
+    2375455605656012087: 1
+    8791328407515133075: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_eof.h": 1
+    2441423827050106432: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdio.h": 1
+    1111066320214980944: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_time_t.h": 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/errno.h": 1
+    6507332248760061770: 1
+    189960804150084661: 1
+    4930953547145304846: 1
+    5398732664414664178: 1
+    7782226760745400028: 1
+    2302093536841146656: 1
+    323097543349631476: 1
+    1284073991061878936: 1
+    2078683349335811557: 1
+    6899925434468432110: 1
+    8326690121554581599: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_size_t.h": 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdarg.h": 1
+    5375742111383270597: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_blkcnt_t.h": 1
+    5970925633727738350: 1
+    2632007659761228415: 1
+    1797243913988686555: 1
+    8451380423309005384: 1
+    8411869873804032448: 1
+    2948129183220688976: 1
+    8593797194139697193: 1
+    0: 23
+    5556949381879866913: 1

@@ -1,0 +1,90 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/floydwarshall/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/floydwarshall/includes/values_7' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/floydwarshall/frst.c' -o '/tmp/frst.c78d9d7.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/floydwarshall/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 197 
+  Distinct operators: 26 
+  Total_operands: 76 
+  Distinct operands: 38 
+  Program length: 273 
+  Vocabulary size: 64 
+  Program volume: 1638 
+  Effort: 42588 
+  Program level: 0.04 
+  Difficulty level: 26 
+  Time to implement: 2366 
+  Bugs delivered: 0.41 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 2
+    if: 1
+    for: 3
+    ): 4
+    ,: 30
+    {: 3
+    (: 4
+    }: 3
+    []: 12
+    ;: 11
+    +: 2
+    ++: 3
+    -: 16
+    <: 4
+    =: 4
+    double : 2
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 3
+    unsigned: 14
+    char: 6
+    enum  { size = 5 }: 1
+    uint8_t: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    h: 8
+    a: 7
+    floydwarshall: 1
+    pop: 2
+    j: 8
+    size: 5
+    push: 2
+    i: 8
+    6460858267569506485: 1
+    7296526943938228287: 1
+    1056093732689808745: 1
+    78805819081808965: 1
+    3023351977240480281: 1
+    2363627157648677887: 1
+    6026605236823049051: 1
+    9120827977745502338: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    2061285575093672810: 1
+    8823299048267376229: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    7092065894597051555: 1
+    6307345742402910571: 1
+    4285890372057060956: 1
+    4279892676503080466: 1
+    5903165722350407488: 1
+    2960940673807380281: 1
+    2991845147942933858: 1
+    5950464107651324621: 1
+    1238432899715526701: 1
+    2182819651360662222: 1
+    2090721511637953435: 1
+    5: 1
+    0: 3
+    7411254647151672039: 1
+    1930457895798619796: 1
+    4428052185166674281: 1
+    3789622190852647033: 1

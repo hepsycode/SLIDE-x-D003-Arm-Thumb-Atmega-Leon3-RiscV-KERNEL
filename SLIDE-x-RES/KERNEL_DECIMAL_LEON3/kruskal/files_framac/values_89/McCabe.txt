@@ -1,0 +1,249 @@
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/kruskal/frst.c (with preprocessing)
+[metrics] Defined functions (10)
+  ======================
+   count_edges (1 call); find (2 calls); find_min (1 call);
+   init_union_find (1 call); is_connected (1 call); kruskal (1 call);
+   main (0 call); make_non_oriented (1 call); make_set (1 call);
+   union_sets (1 call); 
+  
+  Specified-only functions (0)
+  ============================
+   
+  
+  Undefined and unspecified functions (0)
+  =======================================
+   
+  
+  'Extern' global variables (0)
+  =============================
+   
+  
+  Potential entry points (1)
+  ==========================
+   main; 
+  
+  Global metrics
+  ============== 
+  Sloc = 124
+  Decision point = 23
+  Global variables = 10
+  If = 23
+  Loop = 12
+  Goto = 1
+  Assignment = 45
+  Exit point = 10
+  Function = 10
+  Function call = 10
+  Pointer dereferencing = 0
+  Cyclomatic complexity = 33
+[eva] Analyzing a complete application starting at main
+[eva] Computing initial state
+[eva] Initial state computed
+[eva:initial-state] Values of globals at initialization
+  a[0][0] ∈ {-2.28850147667e+18}
+   [0][1] ∈ {-8.69726662902e+18}
+   [0][2] ∈ {4.54555010925e+18}
+   [0][3] ∈ {-8.13417468967e+18}
+   [0][4] ∈ {-9.12567685165e+17}
+   [0][5] ∈ {4.04734478154e+18}
+   [0][6] ∈ {-2.9435886065e+18}
+   [0][7] ∈ {7.71971992444e+18}
+   [0][8] ∈ {8.92137709762e+18}
+   [0][9] ∈ {4.14265068928e+18}
+   [0][10] ∈ {4.66797153591e+18}
+   [0][11] ∈ {3.29892831695e+18}
+   [1][0] ∈ {3.51691034419e+18}
+   [1][1] ∈ {3.3561827181e+18}
+   [1][2] ∈ {-3.42815404768e+18}
+   [1][3] ∈ {4.32766303464e+18}
+   [1][4] ∈ {-1.14953728885e+18}
+   [1][5] ∈ {-4.06437196826e+18}
+   [1][6] ∈ {-7.19882245832e+18}
+   [1][7] ∈ {6.8864068785e+18}
+   [1][8] ∈ {-5.06126037359e+17}
+   [1][9] ∈ {4.73161648839e+18}
+   [1][10] ∈ {8.97056829293e+18}
+   [1][11] ∈ {-6.50382013243e+18}
+   [2][0] ∈ {4.79276879231e+18}
+   [2][1] ∈ {-6.66672437573e+17}
+   [2][2] ∈ {-8.38030570206e+18}
+   [2][3] ∈ {8.68126737442e+18}
+   [2][4] ∈ {-4.20951366241e+18}
+   [2][5] ∈ {-7.09982789176e+18}
+   [2][6] ∈ {8.14816293132e+18}
+   [2][7] ∈ {1.46298084228e+18}
+   [2][8] ∈ {-1.97771324598e+18}
+   [2][9] ∈ {-6.61574729074e+17}
+   [2][10] ∈ {8.98577305798e+18}
+   [2][11] ∈ {7.04310729749e+18}
+   [3][0] ∈ {-2.33168220988e+18}
+   [3][1] ∈ {-2.37349504729e+18}
+   [3][2] ∈ {7.57076111866e+17}
+   [3][3] ∈ {-7.27092517778e+18}
+   [3][4] ∈ {2.54746009819e+18}
+   [3][5] ∈ {-6.76294971681e+18}
+   [3][6] ∈ {4.02148449501e+18}
+   [3][7] ∈ {6.96682167534e+18}
+   [3][8] ∈ {5.46920040528e+18}
+   [3][9] ∈ {5.6877022729e+18}
+   [3][10] ∈ {-6.62005984403e+18}
+   [3][11] ∈ {5.79198639646e+18}
+   [4][0] ∈ {7.74311285612e+18}
+   [4][1] ∈ {-1.45031825492e+18}
+   [4][2] ∈ {-3.0559901662e+18}
+   [4][3] ∈ {8.83853670593e+18}
+   [4][4] ∈ {-1.6478406522e+18}
+   [4][5] ∈ {6.01041148413e+17}
+   [4][6] ∈ {4.64354581611e+18}
+   [4][7] ∈ {9.0685606243e+18}
+   [4][8] ∈ {-3.24607839346e+18}
+   [4][9] ∈ {2.02382484455e+18}
+   [4][10] ∈ {-3.77612902496e+18}
+   [4][11] ∈ {-6.56843366674e+18}
+   [5][0] ∈ {-2.83332240965e+17}
+   [5][1] ∈ {-5.8514299604e+18}
+   [5][2] ∈ {-6.08706654549e+18}
+   [5][3] ∈ {-4.48114077445e+18}
+   [5][4] ∈ {5.70278926623e+18}
+   [5][5] ∈ {-9.02274740112e+18}
+   [5][6] ∈ {-3.05198569128e+18}
+   [5][7] ∈ {4.82801078871e+17}
+   [5][8] ∈ {-2.19980922932e+18}
+   [5][9] ∈ {3.87787892537e+17}
+   [5][10] ∈ {-3.79156465622e+17}
+   [5][11] ∈ {1.81850413585e+18}
+   [6][0] ∈ {9.59216321563e+16}
+   [6][1] ∈ {-8.67140732293e+18}
+   [6][2] ∈ {6.42860187398e+18}
+   [6][3] ∈ {-6.29327108654e+18}
+   [6][4] ∈ {-3.39980217222e+18}
+   [6][5] ∈ {6.68486314054e+18}
+   [6][6] ∈ {1.71487396654e+18}
+   [6][7] ∈ {-8.85790768904e+18}
+   [6][8] ∈ {-9.04138992151e+18}
+   [6][9] ∈ {-8.11899527843e+18}
+   [6][10] ∈ {4.71403920213e+18}
+   [6][11] ∈ {1.96023631332e+18}
+   [7][0] ∈ {-6.47659136098e+18}
+   [7][1] ∈ {-8.23282301399e+18}
+   [7][2] ∈ {6.54986375502e+18}
+   [7][3] ∈ {2.19969913593e+18}
+   [7][4] ∈ {9.07025055853e+18}
+   [7][5] ∈ {-6.06703528747e+18}
+   [7][6] ∈ {2.3216182473e+18}
+   [7][7] ∈ {-1.94267896316e+18}
+   [7][8] ∈ {-5.96035072881e+18}
+   [7][9] ∈ {-3.37906755644e+18}
+   [7][10] ∈ {-2.26739290761e+18}
+   [7][11] ∈ {7.29257025994e+18}
+   [8][0] ∈ {5.12438546567e+18}
+   [8][1] ∈ {1.70405869385e+17}
+   [8][2] ∈ {8.55170089287e+18}
+   [8][3] ∈ {-3.64785843034e+18}
+   [8][4] ∈ {1.60328955448e+18}
+   [8][5] ∈ {-8.15469161444e+18}
+   [8][6] ∈ {-3.10564338894e+18}
+   [8][7] ∈ {5.63185546766e+18}
+   [8][8] ∈ {5.9555037386e+18}
+   [8][9] ∈ {5.48485599575e+18}
+   [8][10] ∈ {-6.09573883047e+18}
+   [8][11] ∈ {2.70044189228e+18}
+   [9][0] ∈ {-1.1329356956e+18}
+   [9][1] ∈ {1.4458548095e+18}
+   [9][2] ∈ {6.81948075796e+18}
+   [9][3] ∈ {3.88693054921e+18}
+   [9][4] ∈ {-1.02870645246e+18}
+   [9][5] ∈ {-6.32908359772e+18}
+   [9][6] ∈ {6.08519380855e+17}
+   [9][7] ∈ {7.28777301764e+18}
+   [9][8] ∈ {6.63848764424e+18}
+   [9][9] ∈ {4.70774919416e+18}
+   [9][10] ∈ {2.79468555871e+18}
+   [9][11] ∈ {-7.58552861534e+18}
+   [10][0] ∈ {6.96620281593e+18}
+   [10][1] ∈ {-6.96141640847e+18}
+   [10][2] ∈ {-6.9224762045e+18}
+   [10][3] ∈ {5.3714056497e+18}
+   [10][4] ∈ {-1.2334678939e+18}
+   [10][5] ∈ {-8.37795721802e+18}
+   [10][6] ∈ {1.50062141331e+18}
+   [10][7] ∈ {-3.96251021589e+18}
+   [10][8] ∈ {2.08633485592e+18}
+   [10][9] ∈ {2.6532241766e+18}
+   [10][10] ∈ {6.92638373709e+18}
+   [10][11] ∈ {-6.23371504001e+17}
+   [11][0] ∈ {7.85858572372e+18}
+   [11][1] ∈ {-5.20047541546e+18}
+   [11][2] ∈ {6.69766219944e+18}
+   [11][3] ∈ {-2.54964466428e+17}
+   [11][4] ∈ {-3.20730120521e+18}
+   [11][5] ∈ {-3.75611115668e+18}
+   [11][6] ∈ {-1.91150903954e+18}
+   [11][7] ∈ {3.32202772536e+18}
+   [11][8] ∈ {-3.44524037402e+18}
+   [11][9] ∈ {-6.07845169509e+18}
+   [11][10] ∈ {-1.17029112633e+18}
+   [11][11] ∈ {4.78998961494e+18}
+  union_find[0..11] ∈ {0}
+  i ∈ {0}
+  j ∈ {0}
+  k ∈ {0}
+  z ∈ {0}
+  x ∈ {0}
+  y ∈ {0}
+  min ∈ {0}
+  edge_number ∈ {0}
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:97: starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:91: starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:123: 
+  starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:35: starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:31: starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:177: 
+  starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:173: 
+  starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:197: 
+  starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:63: starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:59: starting to merge loop iterations
+[eva:alarm] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:134: Warning: 
+  overflow in conversion from floating-point to integer.
+  assert -1 < union_find[y];
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:136: 
+  starting to merge loop iterations
+[eva] /SLIDE-x-BENCH/KERNEL/kruskal/frst.c:203: 
+  starting to merge loop iterations
+[eva] done for function main
+[eva:summary] ====== ANALYSIS SUMMARY ======
+  ----------------------------------------------------------------------------
+  10 functions analyzed (out of 10): 100% coverage.
+  In these functions, 124 statements reached (out of 124): 100% coverage.
+  ----------------------------------------------------------------------------
+  No errors or warnings raised during the analysis.
+  ----------------------------------------------------------------------------
+  1 alarm generated by the analysis:
+       1 illegal conversion from floating-point to integer
+  ----------------------------------------------------------------------------
+  No logical properties have been reached by the analysis.
+  ----------------------------------------------------------------------------
+[metrics] Eva coverage statistics
+  =======================
+  Syntactically reachable functions = 10 (out of 10)
+  Semantically reached functions = 10
+  Coverage estimation = 100.0%
+[metrics] References to non-analyzed functions
+  ------------------------------------
+[metrics] Statements analyzed by Eva
+  --------------------------
+  124 stmts in analyzed functions, 124 stmts analyzed (100.0%)
+  count_edges: 15 stmts out of 15 (100.0%)
+  find: 2 stmts out of 2 (100.0%)
+  find_min: 20 stmts out of 20 (100.0%)
+  init_union_find: 8 stmts out of 8 (100.0%)
+  is_connected: 21 stmts out of 21 (100.0%)
+  kruskal: 22 stmts out of 22 (100.0%)
+  main: 6 stmts out of 6 (100.0%)
+  make_non_oriented: 18 stmts out of 18 (100.0%)
+  make_set: 2 stmts out of 2 (100.0%)
+  union_sets: 10 stmts out of 10 (100.0%)

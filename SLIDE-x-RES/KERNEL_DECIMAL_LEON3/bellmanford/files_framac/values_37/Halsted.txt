@@ -1,0 +1,103 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/bellmanford/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/bellmanford/includes/values_37' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/bellmanford/frst.c' -o '/tmp/frst.cae216a.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/bellmanford/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 298 
+  Distinct operators: 34 
+  Total_operands: 144 
+  Distinct operands: 43 
+  Program length: 442 
+  Vocabulary size: 77 
+  Program volume: 2769.92 
+  Effort: 157692.17 
+  Program level: 0.02 
+  Difficulty level: 56.93 
+  Time to implement: 8760.68 
+  Bugs delivered: 0.97 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 3
+    sizeof: 1
+    if: 3
+    for: 6
+    ): 11
+    ,: 31
+    {: 6
+    (: 11
+    }: 6
+    []: 28
+    ;: 31
+    +: 2
+    &&: 3
+    ++: 6
+    -: 24
+    !=: 3
+    <: 8
+    =: 14
+    *=: 2
+    *: 1
+    -=: 1
+    >=: 1
+    TARGET_TYPE: 2
+    enum  { size = 5 }: 1
+    double : 2
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 2
+    unsigned: 14
+    char: 6
+    uint8_t: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    a: 12
+    bellmanford: 1
+    make_oriented: 1
+    up: 5
+    pop: 2
+    j: 19
+    size: 9
+    push: 2
+    dist: 7
+    i: 29
+    1853156214699551335: 1
+    7428661710189729899: 1
+    2: 1
+    4621738796803581313: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    4359475033940868135: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    352810299366353767: 1
+    217315141640167363: 1
+    8173617338163612050: 1
+    664904905944516789: 1
+    5412640298976286822: 1
+    4872838487803320601: 1
+    728350269734327847: 1
+    8: 1
+    1141971979395505808: 1
+    1891266081618455295: 1
+    8269512388327127025: 1
+    8774705358702543347: 1
+    1: 11
+    4008827847591264023: 1
+    8309967597468336551: 1
+    3867447115097187337: 1
+    3407724392028417332: 1
+    5: 1
+    0: 12
+    2486109594361293680: 1
+    8637826239520674133: 1
+    8766142083305007076: 1
+    238022469143121608: 1
+    7070408453845696251: 1
+    4111279875161207600: 1

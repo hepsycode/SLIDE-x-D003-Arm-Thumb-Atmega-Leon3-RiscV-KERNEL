@@ -1,0 +1,120 @@
+
+;; Function modulo (modulo, funcdef_no=0, decl_uid=2041, cgraph_uid=1, symbol_order=2)
+
+TARGET_TYPE modulo (TARGET_TYPE x, TARGET_TYPE y)
+{
+  TARGET_TYPE result;
+
+  <bb 2> [local count: 118111600]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:11:11] goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 955630225]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:12:16] result_5 = result_1 - y_3(D);
+
+  <bb 4> [local count: 1073741824]:
+  # result_1 = PHI <[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:9:17] x_2(D)(2), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:12:16] result_5(3)>
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:11:19] if (result_1 >= y_3(D))
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 5>; [11.00%]
+
+  <bb 5> [local count: 118111600]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:14:12] return result_1;
+
+}
+
+
+
+;; Function gcd (gcd, funcdef_no=1, decl_uid=2047, cgraph_uid=2, symbol_order=3)
+
+Removing basic block 13
+Removing basic block 14
+Removing basic block 15
+Removing basic block 16
+Removing basic block 17
+TARGET_TYPE gcd ()
+{
+  TARGET_TYPE r;
+  double m.0_1;
+  double n.1_2;
+  double _3;
+  double n.4_4;
+  double _5;
+  double m.7_6;
+  double n.9_7;
+  TARGET_TYPE _8;
+  TARGET_TYPE _15;
+
+  <bb 2> [local count: 142303133]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:22:10] m.0_1 = m;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:22:7] if (m.0_1 == 0.0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 71151566]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:22:20] n.1_2 = n;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:22:15] if (n.1_2 == 0.0)
+    goto <bb 12>; [34.00%]
+  else
+    goto <bb 4>; [66.00%]
+
+  <bb 4> [local count: 118111600]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:25:7] if (m.0_1 < 0.0)
+    goto <bb 5>; [41.00%]
+  else
+    goto <bb 6>; [59.00%]
+
+  <bb 5> [local count: 48425756]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:26:13] _3 = -m.0_1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:26:11] m = _3;
+
+  <bb 6> [local count: 118111600]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:27:10] n.4_4 = n;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:27:7] if (n.4_4 < 0.0)
+    goto <bb 7>; [41.00%]
+  else
+    goto <bb 8>; [59.00%]
+
+  <bb 7> [local count: 48425756]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:28:13] _5 = -n.4_4;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:28:11] n = _5;
+
+  <bb 8> [local count: 118111600]:
+  goto <bb 10>; [100.00%]
+
+  <bb 9> [local count: 955630224]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:33:13] m.7_6 = m;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:33:13] r_16 = modulo (m.7_6, n.9_7);
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:34:11] m = n.9_7;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:35:11] n = r_16;
+
+  <bb 10> [local count: 1073741824]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:31:11] n.9_7 = n;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:31:11] if (n.9_7 != 0.0)
+    goto <bb 9>; [89.00%]
+  else
+    goto <bb 11>; [11.00%]
+
+  <bb 11> [local count: 118111600]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:38:12] _15 = m;
+
+  <bb 12> [local count: 142303133]:
+  # _8 = PHI <[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:23:16] -1.0e+0(3), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:38:12] _15(11)>
+  return _8;
+
+}
+
+
+
+;; Function main (main, funcdef_no=2, decl_uid=2053, cgraph_uid=3, symbol_order=4) (executed once)
+
+void main ()
+{
+  <bb 2> [local count: 1073741824]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:44:5] gcd ();
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/gcd/frst.c:45:1] return;
+
+}
+
+

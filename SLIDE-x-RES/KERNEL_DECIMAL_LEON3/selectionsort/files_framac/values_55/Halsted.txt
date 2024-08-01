@@ -1,0 +1,95 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/selectionsort/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/selectionsort/includes/values_55' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c' -o '/tmp/frst.cbaac71.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/selectionsort/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 184 
+  Distinct operators: 27 
+  Total_operands: 77 
+  Distinct operands: 42 
+  Program length: 261 
+  Vocabulary size: 69 
+  Program volume: 1594.32 
+  Effort: 39459.54 
+  Program level: 0.04 
+  Difficulty level: 24.75 
+  Time to implement: 2192.20 
+  Bugs delivered: 0.39 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 1
+    if: 1
+    for: 2
+    ): 5
+    ,: 29
+    {: 1
+    (: 5
+    }: 1
+    []: 6
+    ;: 13
+    +: 1
+    ++: 2
+    -: 13
+    <: 3
+    =: 7
+    enum  { size = 27 }: 1
+    TARGET_TYPE: 1
+    double : 2
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 1
+    unsigned: 14
+    char: 6
+    uint8_t: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    a: 7
+    selectionsort: 1
+    temp: 3
+    min_idx: 6
+    pop: 2
+    j: 6
+    size: 3
+    push: 2
+    i: 8
+    6421324813023841244: 1
+    579366723446070292: 1
+    4024706293910566658: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    8903513979854703613: 1
+    3779897735569256678: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    6624458258458763626: 1
+    1114886990883182742: 1
+    8429808117255405478: 1
+    2408476530942470439: 1
+    3473998507707811916: 1
+    1400599190819485604: 1
+    27: 1
+    4751743026683493551: 1
+    7045109590555314969: 1
+    968770418561808085: 1
+    1694123152862297660: 1
+    6373912138610924653: 1
+    8624793512118511790: 1
+    1: 2
+    3180067635103579703: 1
+    8588845618973129158: 1
+    4985141381647220308: 1
+    1031555859841194911: 1
+    0: 3
+    6376095592995031050: 1
+    1310597916006459156: 1
+    860459420698840200: 1
+    8711259426968327703: 1
+    5932560160586665971: 1
+    7821111413804457489: 1

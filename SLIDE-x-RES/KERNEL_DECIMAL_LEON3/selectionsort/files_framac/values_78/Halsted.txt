@@ -1,0 +1,93 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/selectionsort/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/selectionsort/includes/values_78' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c' -o '/tmp/frst.c1b0789.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/selectionsort/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 185 
+  Distinct operators: 27 
+  Total_operands: 75 
+  Distinct operands: 40 
+  Program length: 260 
+  Vocabulary size: 67 
+  Program volume: 1577.18 
+  Effort: 39922.45 
+  Program level: 0.04 
+  Difficulty level: 25.31 
+  Time to implement: 2217.91 
+  Bugs delivered: 0.39 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 1
+    if: 1
+    for: 2
+    ): 5
+    ,: 27
+    {: 1
+    (: 5
+    }: 1
+    []: 6
+    ;: 13
+    +: 1
+    ++: 2
+    -: 16
+    <: 3
+    =: 7
+    TARGET_TYPE: 1
+    double : 2
+    enum  { size = 25 }: 1
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 1
+    unsigned: 14
+    char: 6
+    uint8_t: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    a: 7
+    selectionsort: 1
+    temp: 3
+    min_idx: 6
+    pop: 2
+    j: 6
+    size: 3
+    push: 2
+    i: 8
+    1076506300165771960: 1
+    6575483455838110826: 1
+    9115356616963535805: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    7949636530963727024: 1
+    8681214190273677759: 1
+    1001424402232971942: 1
+    1342825692584856791: 1
+    2002102730538056436: 1
+    8813466238161176609: 1
+    7530208011483765867: 1
+    7761401682155025118: 1
+    1: 2
+    2168909742120661517: 1
+    107422856110945161: 1
+    1882198140131193883: 1
+    25: 1
+    7169495605736207593: 1
+    3677236298352232480: 1
+    0: 3
+    6560569531195922091: 1
+    5210080645473501717: 1
+    2641834270426468572: 1
+    2324675291246668007: 1
+    4999418228956114842: 1
+    725075811048479491: 1
+    5602197884432304401: 1
+    4275089242473342099: 1
+    1865422543952412347: 1

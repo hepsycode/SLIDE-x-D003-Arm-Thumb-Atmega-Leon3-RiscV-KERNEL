@@ -1,0 +1,85 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/banker_algorithm/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/banker_algorithm/includes/values_30' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c' -o '/tmp/frst.cecb997.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/banker_algorithm/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 210 
+  Distinct operators: 31 
+  Total_operands: 98 
+  Distinct operands: 28 
+  Program length: 308 
+  Vocabulary size: 59 
+  Program volume: 1811.85 
+  Effort: 98293.08 
+  Program level: 0.02 
+  Difficulty level: 54.25 
+  Time to implement: 5460.73 
+  Bugs delivered: 0.71 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 7
+    if: 2
+    for: 4
+    return: 2
+    ): 6
+    ,: 14
+    {: 4
+    (: 6
+    }: 4
+    []: 19
+    ;: 22
+    -: 2
+    ++: 4
+    +=: 2
+    ==: 1
+    <: 4
+    =: 7
+    <=: 1
+    -=: 1
+    TARGET_TYPE: 2
+    double : 4
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 2
+    unsigned: 14
+    char: 6
+    uint8_t: 1
+    enum  { size = 2 }: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    create_needs: 1
+    banker_algorithm: 1
+    found: 4
+    available: 4
+    max: 2
+    need: 5
+    allocated: 4
+    pop: 2
+    j: 18
+    size: 11
+    push: 2
+    i: 15
+    7926043693770200316: 1
+    5932715904459856704: 1
+    2: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    7623468293614558950: 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    3394568123148712030: 1
+    2621120895976118558: 1
+    1: 3
+    5755720807974803095: 1
+    0: 9
+    4941514667237727588: 1
+    7382522664077631262: 1
+    1433445249617860875: 1
+    3519590716163028712: 1

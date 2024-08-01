@@ -1,0 +1,38 @@
+Function 'main'
+Lines executed:100.00% of 6
+
+Function 'kruskal'
+Lines executed:93.33% of 15
+
+Function 'count_edges'
+Lines executed:100.00% of 10
+
+Function 'make_set'
+Lines executed:100.00% of 3
+
+Function 'find'
+Lines executed:100.00% of 2
+
+Function 'union_sets'
+Lines executed:0.00% of 8
+
+Function 'init_union_find'
+Lines executed:100.00% of 6
+
+Function 'make_non_oriented'
+Lines executed:100.00% of 13
+
+Function 'find_min'
+Lines executed:80.00% of 15
+
+Function 'is_connected'
+Lines executed:92.31% of 13
+
+File '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-BENCH/KERNEL/kruskal/frst.c'
+Lines executed:85.71% of 91
+Branches executed:91.30% of 46
+Taken at least once:78.26% of 46
+Calls executed:90.00% of 10
+Creating 'frst.c.gcov'
+
+Lines executed:85.71% of 91

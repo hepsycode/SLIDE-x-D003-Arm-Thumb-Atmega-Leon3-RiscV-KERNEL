@@ -1,0 +1,17 @@
+Function 'main'
+Lines executed:100.00% of 3
+
+Function 'gcd'
+Lines executed:76.92% of 13
+
+Function 'modulo'
+Lines executed:100.00% of 5
+
+File '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-BENCH/KERNEL/gcd/frst.c'
+Lines executed:85.71% of 21
+Branches executed:83.33% of 12
+Taken at least once:58.33% of 12
+Calls executed:100.00% of 2
+Creating 'frst.c.gcov'
+
+Lines executed:85.71% of 21

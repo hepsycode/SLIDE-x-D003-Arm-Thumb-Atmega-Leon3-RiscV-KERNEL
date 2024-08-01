@@ -1,0 +1,35 @@
+Function 'main'
+Lines executed:100.00% of 3
+
+Function 'astar'
+Lines executed:100.00% of 18
+
+Function 'astarF'
+Lines executed:73.68% of 19
+
+Function 'heuristic'
+Lines executed:0.00% of 4
+
+Function 'absolute'
+Lines executed:0.00% of 2
+
+Function 'set_estimates'
+Lines executed:100.00% of 8
+
+Function 'remove_min'
+Lines executed:83.33% of 12
+
+Function 'insert'
+Lines executed:100.00% of 4
+
+Function 'init_camefrom'
+Lines executed:100.00% of 6
+
+File '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-BENCH/KERNEL/astar/frst.c'
+Lines executed:82.89% of 76
+Branches executed:89.47% of 38
+Taken at least once:73.68% of 38
+Calls executed:60.00% of 10
+Creating 'frst.c.gcov'
+
+Lines executed:82.89% of 76

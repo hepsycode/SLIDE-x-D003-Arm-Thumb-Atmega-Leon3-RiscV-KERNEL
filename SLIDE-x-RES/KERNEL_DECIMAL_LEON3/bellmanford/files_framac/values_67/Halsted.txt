@@ -1,0 +1,81 @@
+[kernel:pp] 
+  preprocessing with "gcc -E -C -I. -I/home/federico/.opam/coq-experiment/share/frama-c/libc -D__FRAMAC__ -D__FC_MACHDEP_X86_64 -dD -nostdinc -m64 '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/bellmanford/includes/' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/bellmanford/includes/values_67' '-I/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-CORE' '/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/bellmanford/frst.c' -o '/tmp/frst.cb43661.i'"
+[kernel] Parsing /SLIDE-x-BENCH/KERNEL/bellmanford/frst.c (with preprocessing)
+[metrics] Halstead metrics
+  ================
+  Total operators: 260 
+  Distinct operators: 34 
+  Total_operands: 123 
+  Distinct operands: 21 
+  Program length: 383 
+  Vocabulary size: 55 
+  Program volume: 2214.26 
+  Effort: 220477.11 
+  Program level: 0.01 
+  Difficulty level: 99.57 
+  Time to implement: 12248.73 
+  Bugs delivered: 1.22 
+  
+  
+  Global statistics (Halstead)
+  ============================
+  Operators
+  ---------
+    typedef: 30
+    array: 3
+    sizeof: 1
+    if: 3
+    for: 6
+    ): 11
+    ,: 7
+    {: 6
+    (: 11
+    }: 6
+    []: 28
+    ;: 31
+    +: 2
+    &&: 3
+    ++: 6
+    -: 10
+    !=: 3
+    <: 8
+    =: 14
+    *=: 2
+    *: 1
+    -=: 1
+    >=: 1
+    TARGET_TYPE: 2
+    double : 2
+    enum  { size = 2 }: 1
+    short: 4
+    long: 12
+    int: 8
+    signed: 14
+    TARGET_INDEX: 2
+    unsigned: 14
+    char: 6
+    uint8_t: 1
+    
+  Operands
+  --------
+    fc_stdlib: 4
+    a: 12
+    bellmanford: 1
+    make_oriented: 1
+    up: 5
+    pop: 2
+    j: 19
+    size: 9
+    push: 2
+    dist: 7
+    i: 29
+    6803385806702294651: 1
+    8825416752752895725: 1
+    2: 2
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/__fc_define_intptr_t.h": 1
+    "/home/federico/.opam/coq-experiment/share/frama-c/libc/stdint.h": 1
+    8: 1
+    7182771027144686842: 1
+    1: 11
+    8834561040105840494: 1
+    0: 12

@@ -1,0 +1,82 @@
+
+;; Function selectionsort (selectionsort, funcdef_no=0, decl_uid=2040, cgraph_uid=1, symbol_order=1)
+
+Removing basic block 5
+void selectionsort ()
+{
+  TARGET_TYPE temp;
+  TARGET_INDEX min_idx;
+  TARGET_INDEX j;
+  TARGET_INDEX i;
+  int _1;
+  double _2;
+  int _3;
+  double _4;
+  int _5;
+  int _6;
+  double _7;
+
+  <bb 2> [local count: 35807144]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:12:3] goto <bb 9>; [100.00%]
+
+  <bb 3> [local count: 178992760]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:16:11] j_14 = i_8 + 1;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:16:5] goto <bb 7>; [100.00%]
+
+  <bb 4> [local count: 894749065]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:17:11] _1 = (int) j_9;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:17:11] _2 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:17:11] a[_1];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:17:18] _3 = (int) min_idx_11;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:17:18] _4 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:17:18] a[_3];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:17:9] if (_2 < _4)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 5> [local count: 447374533]:
+
+  <bb 6> [local count: 894749065]:
+  # min_idx_10 = PHI <min_idx_11(5), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:18:17] j_9(4)>
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:16:29] j_18 = j_9 + 1;
+
+  <bb 7> [local count: 1073741824]:
+  # j_9 = PHI <[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:16:11] j_14(3), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:16:29] j_18(6)>
+  # min_idx_11 = PHI <[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:15:13] i_8(3), min_idx_10(6)>
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:16:20] if (j_9 <= 5)
+    goto <bb 4>; [83.33%]
+  else
+    goto <bb 8>; [16.67%]
+
+  <bb 8> [local count: 178992760]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:21:15] _5 = (int) min_idx_11;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:21:12] temp_15 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:21:15] a[_5];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:22:21] _6 = (int) i_8;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:22:21] _7 = [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:22:21] a[_6];
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:22:18] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:22:8] a[_5] = _7;
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:23:12] [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:23:8] a[_6] = temp_15;
+
+  <bb 9> [local count: 214799904]:
+  # i_8 = PHI <[/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:12:9] 0(2), [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:12:27] j_14(8)>
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:12:16] if (i_8 <= 4)
+    goto <bb 3>; [83.33%]
+  else
+    goto <bb 10>; [16.67%]
+
+  <bb 10> [local count: 35807144]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:25:1] return;
+
+}
+
+
+
+;; Function main (main, funcdef_no=1, decl_uid=2054, cgraph_uid=2, symbol_order=2) (executed once)
+
+void main ()
+{
+  <bb 2> [local count: 1073741824]:
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:29:3] selectionsort ();
+  [/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x//SLIDE-x-BENCH/KERNEL/selectionsort/frst.c:30:1] return;
+
+}
+
+

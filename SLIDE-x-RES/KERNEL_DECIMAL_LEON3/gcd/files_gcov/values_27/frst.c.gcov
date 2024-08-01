@@ -1,0 +1,75 @@
+        -:    0:Source:/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-BENCH/KERNEL/gcd/frst.c
+        -:    0:Graph:frst.gcno
+        -:    0:Data:frst.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdint.h>
+        -:    2:#include <values.h>
+        -:    3:
+        -:    4:typedef double TARGET_TYPE;
+        -:    5:typedef uint8_t TARGET_INDEX;
+        -:    6:
+function modulo called 27 returned 100% blocks executed 100%
+       27:    7:TARGET_TYPE modulo(TARGET_TYPE x, TARGET_TYPE y)
+        -:    8:{
+       27:    9:    TARGET_TYPE result = x; 
+        -:   10:      
+      199:   11:    while (result >= y)
+unconditional  0 taken 27
+branch  1 taken 172
+branch  2 taken 27 (fallthrough)
+      172:   12:        result -= y;
+unconditional  0 taken 172
+        -:   13:
+       27:   14:    return result;
+unconditional  0 taken 27
+        -:   15:}
+        -:   16:
+function gcd called 1 returned 100% blocks executed 69%
+        1:   17:TARGET_TYPE gcd()
+        -:   18:{
+        -:   19:
+        1:   20:    TARGET_TYPE r = 0;
+        -:   21:
+       1*:   22:    if(m == 0 && n == 0)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+branch  2 never executed
+branch  3 never executed
+    #####:   23:        return -1;
+unconditional  0 never executed
+        -:   24:
+        1:   25:    if(m < 0) 
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   26:        m = -m;
+unconditional  0 never executed
+        1:   27:    if(n < 0)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   28:        n = -n;
+unconditional  0 never executed
+        -:   29:
+        -:   30:
+       28:   31:    while(n) 
+unconditional  0 taken 1
+branch  1 taken 27
+branch  2 taken 1 (fallthrough)
+        -:   32:    {
+       27:   33:        r = modulo(m,n);
+call    0 returned 27
+       27:   34:        m = n;
+       27:   35:        n = r;
+unconditional  0 taken 27
+        -:   36:    }
+        -:   37:
+        1:   38:    return m;
+unconditional  0 taken 1
+        -:   39:}
+        -:   40:
+        -:   41:
+function main called 1 returned 100% blocks executed 100%
+        1:   42:void main()
+        -:   43:{
+        1:   44:    gcd();
+call    0 returned 1
+        1:   45:}
