@@ -1,2 +1,0 @@
-   text	   data	    bss	    dec	    hex	filename
-  12704	    344	    416	  13464	   3498	/home/federico/Scrivania/SLIDE-x-Repository/SLIDE-x/SLIDE-x-AGGR/KERNEL_DECIMAL_LEON3/bfs//files/values_7/frst
